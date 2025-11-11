@@ -28,7 +28,7 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine(Math.Round(ds.GetMultiplySeries(x, y), 2));
+        Console.WriteLine(Math.Round(ds.GetMultiplySeries(x, y), 3));
         Console.ReadKey();
       
 
