@@ -11,7 +11,7 @@ namespace Tyuiu.TsvetkovRA.Sprint3.Task0.V4.Lib
             {
                 res *= (sinus + k);
             }
-            return res;
+            return Math.Round(res, 3);
         }
     }
 }
