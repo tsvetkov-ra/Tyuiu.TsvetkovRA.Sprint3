@@ -3,17 +3,20 @@ namespace Tyuiu.TsvetkovRA.Sprint3.Task3.V28.Lib
 {
     public class DataService : ISprint3Task3V28
     {
-        string ISprint3Task3V28.ReplaceNumOnChar(string value, char item)
+        public string ReplaceNumOnChar(string value, char item)
         {
-            foreach (char c in value) 
-            {
-                if (Char.IsDigit(c))
+           
+        
+                foreach (char c in value)
                 {
-                    value = value.Replace(c, item);
+                    if (Char.IsDigit(c))
+                    {
+                        value = value.Replace(c, item);
+                    }
+
                 }
-                
-            }
-            return value;
+                return value;
+            
         }
     }
 }

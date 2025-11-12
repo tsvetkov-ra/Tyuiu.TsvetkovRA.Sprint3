@@ -12,7 +12,7 @@ namespace Tyuiu.TsvetkovRA.Sprint3.Task3.V28.Test
             
             string value = "f35hyt t4j 3gkg45";
             char item = 'r';
-            Assert.AreEqual("frrhyt trj rgkgrr" , "frrhyt trj rgkgrr");
+            Assert.AreEqual(ds.ReplaceNumOnChar(value, item), "frrhyt trj rgkgrr");
         }
     }
 }

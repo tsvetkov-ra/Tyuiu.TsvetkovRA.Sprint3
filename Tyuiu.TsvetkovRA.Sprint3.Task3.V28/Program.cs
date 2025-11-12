@@ -3,7 +3,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        
+        DataService ds = new DataService(); 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #3                                                               *");
         Console.WriteLine("* Тема: Оператор цикла for                                                *");
@@ -23,15 +23,7 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         string value = "f35hyt t4j 3gkg45";
         char item = 'r';
+        Console.Write(ds.ReplaceNumOnChar(value, item));
 
-        foreach (char c in value)
-        {
-            if (Char.IsDigit(c))
-            {
-                value = value.Replace(c, item);
-            }
-
-        }
-        Console.WriteLine(value);
     }
 }
