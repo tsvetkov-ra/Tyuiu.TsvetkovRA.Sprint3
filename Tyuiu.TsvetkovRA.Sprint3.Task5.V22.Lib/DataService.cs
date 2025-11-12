@@ -12,11 +12,11 @@ namespace Tyuiu.TsvetkovRA.Sprint3.Task5.V22.Lib
             {
                 for (int k = startValue2; k <= stopValue2; k++)
                 {
-                    sum += Math.Pow(x, 3) * Math.Sin(k);
+                    sum += Math.Pow(x, 3) * Math.Sin(k) + 2;
                 }
             }
 
-            sum += 2;
+            ;
 
             return Math.Round(sum, 3);
         }
